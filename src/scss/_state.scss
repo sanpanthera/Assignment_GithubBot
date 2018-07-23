@@ -1,0 +1,70 @@
+.display-4{
+    font-size: 0.8em !important;
+}
+.chats{
+	height: 50vh;
+	overflow-x: scroll;
+	overflow-x: hidden;
+	background: #ECEFF1;
+	position: relative;
+    top: 35px;
+}
+.chats ul li{
+	display: inline-block;
+	list-style: none;
+	clear: both;
+	font-size: 13px;
+}
+.send-msg{
+	position: relative;
+}
+.send-msg:after{
+	content: "";
+	width:0;
+	height:0;
+	top: 0px;
+	right: -8px;
+	position: absolute;
+	border-top: 8px solid #CFD8DC;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+.send-msg p{
+	background: #CFD8DC;
+}
+.sender-img{
+	display: inline;
+}
+.sender-img img{
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+}
+.receive-msg .receive-msg-desc{
+	display: inline-block;
+	position: relative;
+}
+.receive-msg-desc:before{
+	content: "";
+	width:0;
+	height:0;
+	top: 0px;
+	left: -8px;
+	position: absolute;
+	border-top: 8px solid #fff;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+.msg-box{
+	margin-top: 35px;
+}
+.msg-box i{
+	color: #404040;
+}
+.msg-box input{
+	font-size: 14px;
+}
+.msg-box input:focus{
+	outline: none;
+}

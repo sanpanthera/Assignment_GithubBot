@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <title>Github Bot</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-fixed navbar-dark bg-dark">
+            <i class="fa fa-github fa-4x" aria-hidden="true">
+                <a class="navbar-brand align-middle ml-4 display-4">Github Bot</a>
+            </i>
+        </nav>
+    </div>
+    <!-- Navbar Start-->
+
+    <div class="container-fluid " id="container">
+        <main class="row flex-column mx-0 mb-0 mt-5">
+            <div class="row pt-3 justify-content-center">
+                <div class="col-7">
+                    <div class="chat-content">
+                        <div class="col-md-12 chats pt-3 pl-2 pr-3 pb-3">
+                            <ul class="p-0" id="chat">                              
+                              
+                            </ul>
+                        </div>
+                        <div class="col-md-12 p-2 msg-box border border-primary">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="txtCommand" list="command" placeholder="Enter your Query" />
+                                        <datalist id="command">
+                                            <option value="Create repository">
+                                            <option value="Create Issue">
+                                            <option value="Update Issue">
+                                            <option value="Add Comment">
+                                            <option value="Add Collaborator">
+                                            <option value="View Last Comment">
+                                        </datalist>
+
+                                        <span class="input-group-append">
+                                            <button class="btn btn-outline-dark" type="button" id="btnCommand">
+                                                <i class="fa fa-file-text-o"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        </main>
+
+        <div id="modalContainer">
+
+        </div>
+
+        <div class="modal fade" id="tokenModal" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="tokenModal"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Please enter below fields to proceed</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="txtToken" class="col-form-label">Your Github Private Token:</label>
+                                <input type="text" class="form-control" id="txtToken">
+
+                                <label for="txtUserName" class="col-form-label">User Name:</label>
+                                <input type="text" class="form-control" id="txtUserName">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="btnSave">Enter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid fixed-bottom" id="footerId">
+        <footer>@ Copyright 2018</footer>
+    </div>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
